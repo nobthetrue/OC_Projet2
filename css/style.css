@@ -107,6 +107,7 @@ a {
 .main-header {
     display: flex;
     flex-direction: column;
+    margin-bottom: 10px;
 }
 
 /*Barre de recherche*/
@@ -114,8 +115,6 @@ a {
     display: flex;
     width: 22%;
     flex-direction: row;
-
-    border: solid 5px black;
 }
 
 .menu-search-bar i {
@@ -123,6 +122,7 @@ a {
     color: black;
     background-color: #F2F2F2;
     padding: 20px;
+    border-radius: 20px 0 0 20px;
 }
 
 .menu-search-bar button {
@@ -131,19 +131,70 @@ a {
     background-color: #0065FC;
     font-size: large;
     font-weight: bold;
+    border: none;
+    border-radius: 0 20px 20px 0;
 }
 
 #search-bar {
-    display: block;
-    color: black;
     font-weight: bold;
     font-size: large;
-    opacity: 1;
     padding-right: 0;
     padding-left: 10%;
+    border: solid #F2F2F2;
+    border-width: 1px 0 1px 0;
 }
 
-#Marseille
+/*Partie filtres*/
+.main-filtres {
+    display: flex;
+    font-weight: bold;
+    align-items: center;
+}
+
+.menu-filtres  {
+    display: flex;
+    padding: 30px 30px 10px 10px;
+}
+
+.main-filtres p {
+    border: solid 2px black;
+}
+
+.filtres {
+    display: flex;
+    padding: 14px;
+    margin: 7px;
+    border: solid 2px #D9D9D9;
+    border-radius: 25px;
+}
+
+.filtres i {
+    padding-right: 10px;
+}
+
+.filtres:hover {
+    background-color: #DEEBFF;
+}
+
+/*Info*/
+.info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.info i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+    border: solid 1px #D9D9D9;
+    border-radius: 20px;
+    font-size: 12px;
+
+}
 
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
