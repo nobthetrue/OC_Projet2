@@ -93,6 +93,7 @@ a {
 .phrases {
     display: flex;
     flex-direction: column;
+    margin-bottom: 15px;
 }
 
 .phrases h2 {
@@ -115,6 +116,10 @@ a {
     display: flex;
     width: 22%;
     flex-direction: row;
+}
+
+::placeholder {
+    color: black;
 }
 
 .menu-search-bar i {
@@ -149,15 +154,13 @@ a {
     display: flex;
     font-weight: bold;
     align-items: center;
+    padding-top: 30px;
+
 }
 
 .menu-filtres  {
     display: flex;
-    padding: 30px 30px 10px 10px;
-}
-
-.main-filtres p {
-    border: solid 2px black;
+    padding-left: 10px;
 }
 
 .filtres {
@@ -181,6 +184,7 @@ a {
     display: flex;
     flex-direction: row;
     align-items: center;
+    padding: 5px 0 5px 0;
 }
 
 .info i {
@@ -303,14 +307,12 @@ a {
     margin-bottom: 5px;
 }
 
-=======
 /*Activités*/
 
 .activites-container {
     display: flex;
     flex-direction: column;
     padding-left: 30px;
->>>>>>> partie-activite
 }
 
 .activites {
@@ -338,8 +340,27 @@ a {
 /*Partie footer*/
 .pied-de-page {
     display: flex;
+    justify-content: center;
+    background-color: var(--main-bg-color);
+    padding: 15px;
 }
 
+.pied-de-page-partie {
+    display: flex;
+    width: 33%;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.pied-de-page-partie h3 {
+    margin: 0;
+}
+
+.pied-de-page-partie a {
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: intrinsic;
+}
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
