@@ -122,6 +122,10 @@ a {
     color: black;
 }
 
+::placeholder {
+    color: black;
+}
+
 .menu-search-bar i {
     font-size: large;
     color: black;
@@ -156,10 +160,13 @@ a {
     align-items: center;
     padding-top: 30px;
 
+    padding-top: 30px;
+
 }
 
 .menu-filtres  {
     display: flex;
+    padding-left: 10px;
     padding-left: 10px;
 }
 
@@ -184,6 +191,7 @@ a {
     display: flex;
     flex-direction: row;
     align-items: center;
+    padding: 5px 0 5px 0;
     padding: 5px 0 5px 0;
 }
 
