@@ -320,7 +320,7 @@ a {
 .activites-container {
     display: flex;
     flex-direction: column;
-    padding-left: 30px;
+    padding: 0 30px 0 30px;
     margin-top: 40px;
     margin-bottom: 65px;
 }
@@ -343,21 +343,21 @@ a {
     border-radius: 20px 20px 0 0;
 }
 
-.activites-card h3 {
+.activites-card h4 {
     padding: 0 0 0 20px;
 }
 
 /*Partie footer*/
 .pied-de-page {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     background-color: var(--main-bg-color);
-    padding: 15px;
+    padding: 15px 0 15px 15px;
 }
 
 .pied-de-page-partie {
     display: flex;
-    width: 33%;
+    width: 32%;
     flex-direction: column;
     gap: 15px;
 }
