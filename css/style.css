@@ -114,42 +114,39 @@ a {
 /*Barre de recherche*/
 .menu-search-bar {
     display: flex;
-    width: 22%;
     flex-direction: row;
 }
 
-::placeholder {
-    color: black;
-}
-
-::placeholder {
-    color: black;
-}
-
 .menu-search-bar i {
-    font-size: large;
+    height: 18px;
+    width: 14px;
     color: black;
     background-color: #F2F2F2;
-    padding: 20px;
-    border-radius: 20px 0 0 20px;
+    padding: 15px 18px 15px 18px;
+    border-radius: 15px 0 0 15px;
+}
+
+::placeholder {
+    color: black;
 }
 
 .menu-search-bar button {
-    padding: 14px;
+    padding: 13px;
     color: white;
     background-color: #0065FC;
     font-size: large;
     font-weight: bold;
     border: none;
-    border-radius: 0 20px 20px 0;
+    border-radius: 0 15px 15px 0;
 }
 
 #search-bar {
     font-weight: bold;
     font-size: large;
     padding-right: 0;
-    padding-left: 10%;
     border: solid #F2F2F2;
+    padding-left: 21px;
+    padding-right: 2px;
     border-width: 1px 0 1px 0;
 }
 
@@ -168,15 +165,18 @@ a {
 
 .filtres {
     display: flex;
-    padding: 14px;
+    gap: 10px;
+    padding: 12px;
     margin: 7px;
     border: solid 2px #D9D9D9;
     border-radius: 25px;
 }
 
 .filtres i {
-    padding-right: 10px;
+    font-size: larger;
+    padding-left: 2px;
 }
+
 
 .filtres:hover {
     background-color: #DEEBFF;
@@ -383,6 +383,10 @@ a {
         align-items: start;
     }
 
+    .main-filtres span {
+        font-size: 18px;
+    }
+
     .menu-filtres  {
         display: flex;
         padding-left: 0;
@@ -445,5 +449,5 @@ a {
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
-    /* ... */
+    
 }
