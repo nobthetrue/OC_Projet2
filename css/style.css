@@ -131,7 +131,7 @@ a {
     color: black;
 }
 
-.menu-search-bar button {
+#search-button {
     padding: 13px;
     color: white;
     background-color: #0065FC;
@@ -139,6 +139,10 @@ a {
     font-weight: bold;
     border: none;
     border-radius: 0 15px 15px 0;
+}
+
+#search-bar:focus {
+    outline: none;
 }
 
 #search-bar {
@@ -513,10 +517,9 @@ a {
     /*Barre de recherche*/
     .menu-search-bar {
         display: flex;
-        border: solid 2px black;
         flex-direction: row;
     }
-
+    
     .menu-search-bar i {
         height: 18px;
         width: 14px;
@@ -525,8 +528,12 @@ a {
         padding: 15px 18px 15px 18px;
         border-radius: 15px 0 0 15px;
     }
-
-    .menu-search-bar button {
+    
+    ::placeholder {
+        color: black;
+    }
+    
+    #search-button {
         padding: 13px;
         color: white;
         background-color: #0065FC;
@@ -535,7 +542,11 @@ a {
         border: none;
         border-radius: 0 15px 15px 0;
     }
-
+    
+    #search-bar:focus {
+        outline: none;
+    }
+    
     #search-bar {
         font-weight: bold;
         font-size: large;
