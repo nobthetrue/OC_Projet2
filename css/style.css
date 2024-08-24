@@ -52,7 +52,6 @@ a {
 }
 
 .euro {
-    border: solid 2px black;
     font-weight: 700;
 }
 
@@ -86,7 +85,7 @@ a {
     padding-top: 10px;
 }
 
-.nav-entete a:hover {
+.nav-entete a:focus {
     border-top: solid 3px #0065FC;
     color: #0065FC;
 }
@@ -195,6 +194,10 @@ a {
     padding: 5px 0 5px 0;
 }
 
+.info p {
+    width: 80%;
+}
+
 .info i {
     display: flex;
     justify-content: center;
@@ -203,9 +206,8 @@ a {
     height: 24px;
     margin-right: 10px;
     border: solid 1px #D9D9D9;
-    border-radius: 20px;
+    border-radius: 50%;
     font-size: 12px;
-
 }
 
 /****** Hebergements And Populaires ***********/
@@ -256,7 +258,6 @@ a {
 .hebergements-cards .card-subtitle {
     padding: 5px 0 5px 0;
     margin: 0;
-    border: solid 2px black;
 }
 
 .hebergements-cards h3 {
@@ -450,17 +451,12 @@ a {
 /* Small devices (phones, less than 768px) */
 @media all and (min-width: 320px) and (max-width: 767.98px) {
     /****** General ***********/
-    :root {
-
-    }
-
     .main-container {
         padding: 0;
     }
 
-    body {
-        width: 100%;
-        border: solid 2px black;
+    .main-header {
+        padding: 0 25px;
     }
 
     /****** Header ***********/
@@ -470,48 +466,27 @@ a {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        border: solid 5px black;
     }
 
     .entete img {
-        margin: 0;
+        margin-top: 30px;
     }
 
     .nav-entete {
-        display: flex;
-        width: auto;
-        flex-direction: row;
-        gap: 70px;
+        gap: 0;
+        width: 100%;
     }
 
     .nav-entete a {
-        padding-top: 10px;
-    }
-
-    .nav-entete a:hover {
-        border-top: solid 3px #0065FC;
-        color: #0065FC;
-    }
-
-    .phrases {
         display: flex;
-        flex-direction: column;
-        margin-bottom: 15px;
+        justify-content: center;
+        width: 50%;
+        padding-bottom: 10px;
     }
 
-    .phrases h2 {
-        margin-bottom: 8px;
-        
-    }
-
-    .phrases p {
-        margin-top: 0;
-    }
-
-    .main-header {
-        display: flex;
-        flex-direction: column;
-        margin-bottom: 10px;
+    .nav-entete a:focus {
+        border-top: hidden;
+        border-bottom: solid 3px #0065FC;
     }
 
     /*Barre de recherche*/
@@ -528,23 +503,13 @@ a {
         padding: 15px 18px 15px 18px;
         border-radius: 15px 0 0 15px;
     }
-    
-    ::placeholder {
-        color: black;
-    }
-    
+
+    #search-button::before {
+        content: "Test";
+      }
+
     #search-button {
-        padding: 13px;
-        color: white;
-        background-color: #0065FC;
-        font-size: large;
-        font-weight: bold;
-        border: none;
-        border-radius: 0 15px 15px 0;
-    }
-    
-    #search-bar:focus {
-        outline: none;
+        display: inline-block;
     }
     
     #search-bar {
@@ -557,6 +522,10 @@ a {
         border-width: 1px 0 1px 0;
     }
 
+    form {
+        border: solid 2px black;
+    }
+
     /*Partie filtres*/
     .main-filtres {
         flex-direction: column;
@@ -566,19 +535,24 @@ a {
     .menu-filtres  {
         display: grid;
         grid-template-columns: 1fr 1fr;
+        gap: 10px;
         padding-left: 0;
         width: 100%;
-        border: solid 2px black;
+    }
 
+    .main-filtres span {
+        display: flex;
+        width: 100%;
+        justify-content: left;
+        margin-bottom: 5px;
     }
 
     .filtres {
         display: flex;
-        gap: 10px;
-        padding: 12px;
-        margin: 0;
-        border: solid 2px #D9D9D9;
+        margin: 10px 0 0 0;
         border-radius: 25px;
+        align-content: center;
+        align-items: center;
     }
 
     .filtres i {
@@ -590,9 +564,6 @@ a {
     .filtres:hover {
         background-color: #DEEBFF;
     }
-
-    /*Info*/
-
 
     /****** Hebergements And Populaires ***********/
     .hebergements-and-populaires {
@@ -607,11 +578,15 @@ a {
 
     /****** Hebergements ***********/
     .hebergements {
-        background-color: unset;
+        background-color: white;
     }
 
     .hebergements-cards {
         grid-template-columns: 1fr;
+    }
+
+    .afficher-plus {
+        margin: 20px 0 15px 0px;
     }
 
     /****** Populaires ***********/
@@ -620,8 +595,14 @@ a {
     }
 
     /*Activités*/
+    .activites-container {
+        margin-right: 5px;
+        margin-left: 5px;
+    }
+
     .activites {
         grid-template-columns: 1fr;
+        gap: 15px;
     }
 
     .activites img {
@@ -631,7 +612,9 @@ a {
 
     /*Partie footer*/
     .pied-de-page {
+        padding: 30px;
         flex-direction: column;
+        gap: 50px;
     }
 
     .pied-de-page-partie {
