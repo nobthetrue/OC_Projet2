@@ -140,6 +140,10 @@ a {
     border-radius: 0 15px 15px 0;
 }
 
+form {
+    
+}
+
 #search-bar:focus {
     outline: none;
 }
@@ -508,10 +512,6 @@ a {
         content: "Test";
       }
 
-    #search-button {
-        display: inline-block;
-    }
-    
     #search-bar {
         font-weight: bold;
         font-size: large;
@@ -520,10 +520,6 @@ a {
         padding-left: 21px;
         padding-right: 2px;
         border-width: 1px 0 1px 0;
-    }
-
-    form {
-        border: solid 2px black;
     }
 
     /*Partie filtres*/
@@ -576,11 +572,11 @@ a {
         width: 100%;
     }
 
-    /****** Hebergements ***********/
-    .hebergements {
+    .hebergements-and-populaires .hebergements {
         background-color: white;
     }
 
+    /****** Hebergements ***********/
     .hebergements-cards {
         grid-template-columns: 1fr;
     }
