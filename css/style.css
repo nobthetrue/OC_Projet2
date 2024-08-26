@@ -90,6 +90,12 @@ a {
     color: #0065FC;
 }
 
+.nav-entete a:hover {
+    border-top: solid 3px #0065FC;
+    color: #0065FC;
+}
+
+
 .phrases {
     display: flex;
     flex-direction: column;
@@ -114,6 +120,10 @@ a {
 /*Barre de recherche*/
 .menu-search-bar {
     display: flex;
+}
+
+.main-search-bar {
+    display: flex;
     flex-direction: row;
 }
 
@@ -130,7 +140,7 @@ a {
     color: black;
 }
 
-#search-button {
+#search-button-rechercher {
     padding: 13px;
     color: white;
     background-color: #0065FC;
@@ -140,8 +150,8 @@ a {
     border-radius: 0 15px 15px 0;
 }
 
-form {
-    
+#search-button-rechercher i {
+    display: none;   
 }
 
 #search-bar:focus {
@@ -460,11 +470,10 @@ form {
     }
 
     .main-header {
-        padding: 0 25px;
+        padding: 0 15px;
     }
 
     /****** Header ***********/
-
     .entete {
         width: auto;
         flex-direction: column;
@@ -486,6 +495,7 @@ form {
         justify-content: center;
         width: 50%;
         padding-bottom: 10px;
+        border-bottom: solid 3px #F2F2F2;
     }
 
     .nav-entete a:focus {
@@ -493,12 +503,23 @@ form {
         border-bottom: solid 3px #0065FC;
     }
 
+    .nav-entete a:hover {
+        border-top: hidden;
+    }
+
     /*Barre de recherche*/
     .menu-search-bar {
         display: flex;
-        flex-direction: row;
+        width: 100%;
+        max-width: 320px;
     }
-    
+
+    .main-search-bar {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+
     .menu-search-bar i {
         height: 18px;
         width: 14px;
@@ -508,9 +529,31 @@ form {
         border-radius: 15px 0 0 15px;
     }
 
-    #search-button::before {
-        content: "Test";
-      }
+    ::placeholder {
+        color: black;
+    }
+
+    #search-button-rechercher span {
+        display: none;
+    }
+
+    #search-button-rechercher {
+        display: none;
+        height: 49px;
+        width: 49px;
+        border-radius: 15px;
+        height: 100%;
+    }
+
+    #search-button-rechercher i {
+        display: block;   
+        color: white;
+        font-size: smaller;
+    }
+
+    #search-bar:focus {
+        outline: none;
+    }
 
     #search-bar {
         font-weight: bold;
@@ -520,6 +563,7 @@ form {
         padding-left: 21px;
         padding-right: 2px;
         border-width: 1px 0 1px 0;
+        width: 100%;
     }
 
     /*Partie filtres*/
@@ -531,6 +575,7 @@ form {
     .menu-filtres  {
         display: grid;
         grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
         gap: 10px;
         padding-left: 0;
         width: 100%;
@@ -545,6 +590,7 @@ form {
 
     .filtres {
         display: flex;
+        font-size: 14px;
         margin: 10px 0 0 0;
         border-radius: 25px;
         align-content: center;
