@@ -521,7 +521,7 @@ a {
     .menu-search-bar {
         display: flex;
         width: calc(100% - 20px);
-        max-width: 320px;
+        max-width: 377px;
         position: relative;
     }
     
